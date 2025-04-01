@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ---------- GLOBAL ---------- */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color: red; */
+    color: black;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+li {
+    list-style: none;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(238, 206, 206, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 10rem;
+}
+
+
+
+
+/* ---------- HERO ---------- */
+.hero-section {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.hero-logo-image {
+    max-width: 20rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.hero-title {
+    font-size: 3.6rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+/* ---------- VISION SECTION ---------- */
+
+.vision-last {
+    background-color: #f6f6f6;
+    height: 90vh;
+}
+
+.vision {
+    background-color: #f6f6f6;
+    height: 90vh;
+}
+
+.vision-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.vision-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+    justify-self: center;
+}
+
+.vision-title {
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.vision-heading {
+    font-size: 4.2rem;
+    font-weight: 300;
+}
+
+.vision-content {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+}
+
+.vision-img-container {
+    justify-self: center;
+    height: 450px;
+}
+
+.vision-image {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+
+/* ---------- DESIGN SECTION ---------- */
+
+#design {
+    background-color: white;
+}
+
+/* ---------- ALUMINIUM SECTION ---------- */
+
+.aluminium-section {
+    background-color: #cacaca;
+}
+
+.aluminium-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.aluminium-text-content {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+}
+
+.aluminium-heading {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.aluminium-image {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/* ---------- FEATURES SECTION ---------- */
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.features-container img {
+    width: 130px;
+}
+
+.features-section {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+
+/* ---------- VIDEO SECTION ---------- */
+.video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 0;
+}
+
+.video-heading {
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 300;
+    padding: 2rem 0;
+}
+
+
+/* ---------- CONTACT SECTION ---------- */
+
+.contact-section {
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    background-color: #eee;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-text {
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.input-area {
+    padding: 2rem 0;
+    display: flex;
+    gap: 1rem;
+}
+
+#email {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1rem 0.2em;
+    height: 3.2rem;
+    width: 35rem;
+    border-radius: 3px;
+    border: 1px solid #ABB0B2;
+}
+
+.email-btn {
+    background-color: #777;
+    color: white;
+    padding: 0 2rem;
+    border: 1px solid #777;
+    border-radius: 3px;
+    font-size: 1.6rem;
+}
+
+
+/* ---------- COMPONENTS ---------- */
+
+.btn, .btn:visited {
+    border-radius: 10px;
+    padding: 9px 13px;
+    color: white;
+}
+
+.btn-primary:link, .btn-primary:visited, .btn-primary:hover, .btn-primary:active {
+    background-color: #07c;
+    background: linear-gradient(#42a1ec, #0070c9);
+    border: 1px solid #07c;
+}
+
+.btn-secondary:visited, .btn-secondary:link {
+    color: black;
+}
+
+.btn-secondary:hover, .btn-secondary:active {
+    color: white;
+    padding: 9px 13px;
+    border: 1px solid #1595e5;
+    border-radius: 10px;
+    background-color: #1595e5;
+    transition: 0.1s;
+}
